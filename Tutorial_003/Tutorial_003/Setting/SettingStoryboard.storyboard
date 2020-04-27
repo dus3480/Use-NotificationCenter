@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting-->
+        <scene sceneID="czM-JE-S3B">
+            <objects>
+                <viewController storyboardIdentifier="sb_id_setting" id="wQe-PD-jWu" customClass="SettingVC" customModule="Tutorial_003" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gGu-bx-uOe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unq-4c-6ct">
+                                <rect key="frame" x="113.5" y="377" width="187" height="142"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="led - a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpH-XC-pEn">
+                                        <rect key="frame" x="20" y="20.5" width="68" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gHJ-FF-1KR">
+                                        <rect key="frame" x="118" y="20" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aj1-JP-pLa">
+                                        <rect key="frame" x="118" y="91" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="led - b" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PH4-mi-dtt">
+                                        <rect key="frame" x="20" y="91.5" width="70" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gHJ-FF-1KR" secondAttribute="trailing" constant="20" id="0SO-M6-U8S"/>
+                                    <constraint firstItem="aj1-JP-pLa" firstAttribute="leading" secondItem="gHJ-FF-1KR" secondAttribute="leading" id="9UZ-PI-6VK"/>
+                                    <constraint firstItem="gHJ-FF-1KR" firstAttribute="leading" secondItem="qpH-XC-pEn" secondAttribute="trailing" constant="30" id="BdZ-CE-tMj"/>
+                                    <constraint firstItem="gHJ-FF-1KR" firstAttribute="top" secondItem="unq-4c-6ct" secondAttribute="top" constant="20" id="Lho-wk-OZQ"/>
+                                    <constraint firstItem="PH4-mi-dtt" firstAttribute="leading" secondItem="unq-4c-6ct" secondAttribute="leading" constant="20" id="WUc-rq-TNf"/>
+                                    <constraint firstItem="qpH-XC-pEn" firstAttribute="centerY" secondItem="gHJ-FF-1KR" secondAttribute="centerY" id="XXD-8X-ltJ"/>
+                                    <constraint firstItem="qpH-XC-pEn" firstAttribute="leading" secondItem="unq-4c-6ct" secondAttribute="leading" constant="20" id="ckC-MM-wDf"/>
+                                    <constraint firstAttribute="bottom" secondItem="aj1-JP-pLa" secondAttribute="bottom" constant="20" id="n4R-pP-QNv"/>
+                                    <constraint firstItem="PH4-mi-dtt" firstAttribute="centerY" secondItem="aj1-JP-pLa" secondAttribute="centerY" id="oHw-ZG-gJG"/>
+                                    <constraint firstItem="aj1-JP-pLa" firstAttribute="top" secondItem="gHJ-FF-1KR" secondAttribute="bottom" constant="40" id="shv-Kv-Wbz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="unq-4c-6ct" firstAttribute="centerY" secondItem="gGu-bx-uOe" secondAttribute="centerY" id="TUa-hX-XKp"/>
+                            <constraint firstItem="unq-4c-6ct" firstAttribute="centerX" secondItem="gGu-bx-uOe" secondAttribute="centerX" id="jMg-jc-M6A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ojB-GP-eK5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" id="L8a-aG-Px5"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="switchA" destination="gHJ-FF-1KR" id="T51-UU-yyS"/>
+                        <outlet property="switchB" destination="aj1-JP-pLa" id="xhy-kR-6VN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQL-41-8bg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

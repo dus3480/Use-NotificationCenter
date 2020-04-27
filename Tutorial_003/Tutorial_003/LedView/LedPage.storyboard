@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LED_A-->
+        <scene sceneID="xfv-iR-B7n">
+            <objects>
+                <viewController storyboardIdentifier="sb_id_leda" id="SU8-dn-S9L" customClass="LedAVC" customModule="Tutorial_003" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qUP-Wx-Zeq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqc-ky-MsP">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1i7-eh-3m8"/>
+                                    <constraint firstAttribute="width" constant="200" id="yaB-Wf-PkJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xqc-ky-MsP" firstAttribute="centerY" secondItem="qUP-Wx-Zeq" secondAttribute="centerY" id="6PQ-p0-zrk"/>
+                            <constraint firstItem="Xqc-ky-MsP" firstAttribute="centerX" secondItem="qUP-Wx-Zeq" secondAttribute="centerX" id="KVc-fn-4ZM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A4i-Ob-rtY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LED_A" id="KaV-va-7fa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ledBoxView" destination="Xqc-ky-MsP" id="GVp-T4-T9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ug7-0t-2Ga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--LED_B-->
+        <scene sceneID="N4l-fF-emz">
+            <objects>
+                <viewController storyboardIdentifier="sb_id_ledb" id="0cp-R8-V3I" customClass="LedBVC" customModule="Tutorial_003" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bAr-YO-p2t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUA-iz-wQ1">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8HC-El-mif"/>
+                                    <constraint firstAttribute="width" constant="200" id="SkJ-K5-ckS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bUA-iz-wQ1" firstAttribute="centerX" secondItem="bAr-YO-p2t" secondAttribute="centerX" id="N4t-FK-auh"/>
+                            <constraint firstItem="bUA-iz-wQ1" firstAttribute="centerY" secondItem="bAr-YO-p2t" secondAttribute="centerY" id="dtK-fM-w84"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R4y-s3-7q1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LED_B" id="Ueu-M6-xWX"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ledBoxView" destination="bUA-iz-wQ1" id="rbe-7c-s9K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qaq-Ej-9s1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="138"/>
+        </scene>
+    </scenes>
+</document>
